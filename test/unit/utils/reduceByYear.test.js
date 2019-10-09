@@ -1,5 +1,4 @@
 const { expect } = require('chai')
-const { stub } = require('sinon')
 const proxyquire = require('proxyquire')
 
 const { incidentRow } = require('../../utils/dummyData')
@@ -59,7 +58,7 @@ describe('src/utils/reduceByYear', () => {
   })
 
   context('empty row', () => {
-    const incidents = [Array.from({ length: 20}, () => null)]
+    const incidents = [Array.from({ length: 20 }, () => null)]
     const byYear = reduceByYear(false)
 
     before(() => {
