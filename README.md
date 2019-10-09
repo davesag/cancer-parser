@@ -28,8 +28,8 @@ parseData('./all-cancers-combined-acim.xlsx')
 <!-- prettier-ignore -->
 | branch | status | coverage | notes |
 | ------ | ------ | -------- | ----- |
-| `develop` | [![CircleCI](https://circleci.com/gh/industrieco/cancer-parser/tree/develop.svg?style=svg)](https://circleci.com/gh/industrieco/cancer-parser/tree/develop) |  | Work in progress |
-| `master` | [![CircleCI](https://circleci.com/gh/industrieco/cancer-parser/tree/master.svg?style=svg)](https://circleci.com/gh/industrieco/cancer-parser/tree/master) |  | Latest stable release |
+| `develop` | [![CircleCI](https://circleci.com/gh/industrieco/cancer-parser/tree/develop.svg?style=svg)](https://circleci.com/gh/industrieco/cancer-parser/tree/develop) | [![codecov](https://codecov.io/gh/industrieco/cancer-parser/branch/develop/graph/badge.svg)](https://codecov.io/gh/industrieco/cancer-parser) | Work in progress |
+| `master` | [![CircleCI](https://circleci.com/gh/industrieco/cancer-parser/tree/master.svg?style=svg)](https://circleci.com/gh/industrieco/cancer-parser/tree/master) | [![codecov](https://codecov.io/gh/industrieco/cancer-parser/branch/master/graph/badge.svg)](https://codecov.io/gh/industrieco/cancer-parser) | Latest stable release |
 
 ### Prerequisites
 

@@ -18,13 +18,13 @@ jobs:
           keys:
           - dependencies-{{ checksum "package.json" }}
 
-      # - run:
-      #     name: Install global packages
-      #     command: sudo npm install -g codecov greenkeeper-lockfile@1
+      - run:
+          name: Install global packages
+          command: sudo npm install -g codecov greenkeeper-lockfile@1
 
-      # - run:
-      #     name: Greenkeeper Lockfile
-      #     command: greenkeeper-lockfile-update
+      - run:
+          name: Greenkeeper Lockfile
+          command: greenkeeper-lockfile-update
 
       - run:
           name: Install dependencies
@@ -43,10 +43,10 @@ jobs:
           name: Unit Tests with Code Coverage
           command: npm run test:unit:cov
 
-      # - run:
-      #     name: Push any lockfile changes
-      #     command: greenkeeper-lockfile-upload
+      - run:
+          name: Push any lockfile changes
+          command: greenkeeper-lockfile-upload
 
-      # - run:
-      #     name: Send reports to codecov.io
-      #     command: codecov
+      - run:
+          name: Send reports to codecov.io
+          command: codecov
