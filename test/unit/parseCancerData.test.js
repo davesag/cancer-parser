@@ -14,7 +14,7 @@ describe('src/parseCancerData', () => {
 
   const parseCancerData = proxyquire('../../src/parseCancerData', {
     'read-excel-file/node': readXlsxFile,
-    './utils/reduceByYear': byYear
+    './utils/cancer/reduceByYear': byYear
   })
 
   const path = 'some/excel/file.xlsx'

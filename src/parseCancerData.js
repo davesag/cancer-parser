@@ -1,5 +1,5 @@
 const readXlsxFile = require('read-excel-file/node')
-const byYear = require('./utils/reduceByYear')
+const byYear = require('./utils/cancer/reduceByYear')
 
 const parseCancerData = async path => {
   const [incidenceData, populationData] = await Promise.all([

@@ -1,15 +1,15 @@
 const { expect } = require('chai')
 const proxyquire = require('proxyquire')
 
-const { incidentRow } = require('../../utils/dummyData')
+const { incidentRow } = require('../../../utils/dummyData')
 
-describe('src/utils/reduceByYear', () => {
+describe('src/utils/cancer/reduceByYear', () => {
   const reduceToAge = (acc, elem, index) => {
     acc[`age${index}`] = elem
     return acc
   }
 
-  const reduceByYear = proxyquire('../../../src/utils/reduceByYear', {
+  const reduceByYear = proxyquire('../../../../src/utils/cancer/reduceByYear', {
     './reduceToAge': reduceToAge
   })
 

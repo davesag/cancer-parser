@@ -9,6 +9,21 @@ module.exports = {
     node: true
   },
   rules: {
-    'prettier/prettier': ['error', { singleQuote: true, semi: false }]
+    'prettier/prettier': [
+      'error',
+      {
+        singleQuote: true,
+        semi: false
+      }
+    ],
+    'no-unused-vars': [
+      'error',
+      {
+        vars: 'all',
+        args: 'after-used',
+        ignoreRestSiblings: true,
+        varsIgnorePattern: '^_'
+      }
+    ]
   }
 }
