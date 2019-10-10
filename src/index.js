@@ -1,5 +1,5 @@
-const parseData = require('./parseData')
+const parseCancerData = require('./parseCancerData')
 
 module.exports = {
-  parseData
+  parseCancerData
 }

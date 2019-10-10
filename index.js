@@ -1,6 +1,6 @@
-const { parseData } = require('./src')
+const { parseCancerData } = require('./src')
 
-parseData('./all-cancers-combined-acim.xlsx')
+parseCancerData('./data/all-cancers-combined-acim.xlsx')
   .then(({ incidents, populations }) => {
     console.log('Incidents', incidents)
     console.log('Populations', populations)

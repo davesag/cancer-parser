@@ -1,7 +1,7 @@
 const readXlsxFile = require('read-excel-file/node')
 const byYear = require('./utils/reduceByYear')
 
-const parseData = async path => {
+const parseCancerData = async path => {
   const [incidenceData, populationData] = await Promise.all([
     readXlsxFile(path, { sheet: 'Incidence counts' }),
     readXlsxFile(path, { sheet: 'Populations' })
@@ -16,4 +16,4 @@ const parseData = async path => {
   }
 }
 
-module.exports = parseData
+module.exports = parseCancerData

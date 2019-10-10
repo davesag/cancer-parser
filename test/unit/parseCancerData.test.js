@@ -4,7 +4,7 @@ const proxyquire = require('proxyquire')
 
 const { incidentRow, populationRow } = require('../utils/dummyData')
 
-describe('src/parseData', () => {
+describe('src/parseCancerData', () => {
   const readXlsxFile = stub()
   const reduceByYear = (acc, elem) => {
     acc[elem] = elem
@@ -12,7 +12,7 @@ describe('src/parseData', () => {
   }
   const byYear = stub().returns(reduceByYear)
 
-  const parseData = proxyquire('../../src/parseData', {
+  const parseCancerData = proxyquire('../../src/parseCancerData', {
     'read-excel-file/node': readXlsxFile,
     './utils/reduceByYear': byYear
   })
@@ -35,7 +35,7 @@ describe('src/parseData', () => {
     readXlsxFile
       .withArgs(path, { sheet: 'Populations' })
       .resolves(populationData)
-    result = await parseData(path)
+    result = await parseCancerData(path)
   })
 
   it("called readXlsxFile with the path and sheet 'Incidence counts'", () => {

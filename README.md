@@ -11,9 +11,9 @@ First download the file `all-cancers-combined-acim.xsls` from [www.aihw.gov.au/r
 See `index.js`
 
 ```js
-const { parseData } = require('./src')
+const { parseCancerData } = require('./src')
 
-parseData('./all-cancers-combined-acim.xlsx')
+parseCancerData('./data/all-cancers-combined-acim.xlsx')
   .then(({ incidents, populations }) => {
     console.log('Incidents', incidents)
     console.log('Populations', populations)
