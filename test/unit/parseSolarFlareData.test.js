@@ -23,13 +23,11 @@ describe('src/parseSolarFlareData', () => {
   let result
 
   before(async () => {
-    readXlsxFile
-      .withArgs(path)
-      .resolves(flareData)
+    readXlsxFile.withArgs(path).resolves(flareData)
     result = await parseSolarFlareData(path)
   })
 
-  it("called readXlsxFile with the path", () => {
+  it('called readXlsxFile with the path', () => {
     expect(readXlsxFile).to.have.been.calledWith(path)
   })
 
