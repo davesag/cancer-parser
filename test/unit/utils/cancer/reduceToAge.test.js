@@ -1,10 +1,10 @@
 const { expect } = require('chai')
 
-const reduceToAge = require('../../../src/utils/reduceToAge')
+const reduceToAge = require('../../../../src/utils/cancer/reduceToAge')
 
-const { incidentRow } = require('../../utils/dummyData')
+const { incidentRow } = require('../../../utils/dummyData')
 
-describe('src/utils/reduceToAge', () => {
+describe('src/utils/cancer/reduceToAge', () => {
   const ages = incidentRow(1985).slice(1)
 
   let result

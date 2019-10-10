@@ -1,11 +1,11 @@
 const { expect } = require('chai')
 
-const { parseData } = require('../../src')
+const { parseCancerData } = require('../../src')
 
 describe('src', () => {
-  describe('parseData', () => {
+  describe('parseCancerData', () => {
     it('is a function', () => {
-      expect(parseData).to.be.a('function')
+      expect(parseCancerData).to.be.a('function')
     })
   })
 })
