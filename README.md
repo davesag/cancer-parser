@@ -52,7 +52,7 @@ parseSolarFlareData('./data/cfi_daily_1966-2008.xlsx')
 
 ### Prerequisites
 
-- [NodeJS](htps://nodejs.org), version 10.16.3 LTS or better (I use [`nvm`](https://github.com/creationix/nvm) to manage Node versions — `brew install nvm`.)
+- [NodeJS](htps://nodejs.org), version 12.13.0 (LTS) or better (I use [`nvm`](https://github.com/creationix/nvm) to manage Node versions — `brew install nvm`.)
 
 ### Test it
 
