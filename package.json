@@ -8,6 +8,9 @@
     "/src",
     "/CONTRIBUTING.md"
   ],
+  "engines": {
+    "node": ">= 10.16.3"
+  },
   "scripts": {
     "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
     "lint": "eslint .",
